@@ -1,247 +1,105 @@
-Markdown Cheatsheet<a name="TOP"></a>
-===================
+# Título del Proyecto
 
-- - - - 
-# Heading 1 #
+_Acá va un párrafo que describa lo que es el proyecto_
 
-    Markup :  # Heading 1 #
+## Comenzando 🚀
 
-    -OR-
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-    Markup :  ============= (below H1 text)
-
-## Heading 2 ##
-
-    Markup :  ## Heading 2 ##
-
-    -OR-
-
-    Markup: --------------- (below H2 text)
-
-### Heading 3 ###
-
-    Markup :  ### Heading 3 ###
-
-#### Heading 4 ####
-
-    Markup :  #### Heading 4 ####
+Mira **Deployment** para conocer como desplegar el proyecto.
 
 
-Common text
+### Pre-requisitos 📋
 
-    Markup :  Common text
-
-_Emphasized text_
-
-    Markup :  _Emphasized text_ or *Emphasized text*
-
-~~Strikethrough text~~
-
-    Markup :  ~~Strikethrough text~~
-
-__Strong text__
-
-    Markup :  __Strong text__ or **Strong text**
-
-___Strong emphasized text___
-
-    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
-
-[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-
-    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-
-[heading-1](#heading-1 "Goto heading-1")
-    
-    Markup: [heading-1](#heading-1 "Goto heading-1")
-
-Table, like this one :
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+_Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+Da un ejemplo
 ```
 
-Adding a pipe `|` in a cell :
+### Instalación 🔧
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | \|
+_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
-```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  |  \| 
-```
-
-Left, right and center aligned table
-
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
+_Dí cómo será ese paso_
 
 ```
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
+Da un ejemplo
 ```
 
-`code()`
+_Y repite_
 
-    Markup :  `code()`
-
-```javascript
-    var specificLanguage_code = 
-    {
-        "data": {
-            "lookedUpPlatform": 1,
-            "query": "Kasabian+Test+Transmission",
-            "lookedUpItem": {
-                "name": "Test Transmission",
-                "artist": "Kasabian",
-                "album": "Kasabian",
-                "picture": null,
-                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
-            }
-        }
-    }
+```
+hasta finalizar
 ```
 
-    Markup : ```javascript
-             ```
+_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
+## Ejecutando las pruebas ⚙️
 
-~~~
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
+_Explica como ejecutar las pruebas automatizadas para este sistema_
 
--OR-
+### Analice las pruebas end-to-end 🔩
 
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
-~~~
+_Explica que verifican estas pruebas y por qué_
 
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
-
-~~~
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
-~~~
-
-- [ ] An uncompleted task
-- [x] A completed task
-
-~~~
- Markup : - [ ] An uncompleted task
-          - [x] A completed task
-~~~
-
-- [ ] An uncompleted task
-    - [ ] A subtask
-
-~~~
- Markup : - [ ] An uncompleted task
-              - [ ] A subtask
-~~~
-
-> Blockquote
->> Nested blockquote
-
-    Markup :  > Blockquote
-              >> Nested Blockquote
-
-_Horizontal line :_
-- - - -
-
-    Markup :  - - - -
-
-_Image with alt :_
-
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-Foldable text:
-
-<details>
-  <summary>Title 1</summary>
-  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-</details>
-<details>
-  <summary>Title 2</summary>
-  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
-</details>
-
-    Markup : <details>
-               <summary>Title 1</summary>
-               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-             </details>
-
-```html
-<h3>HTML</h3>
-<p> Some HTML code here </p>
+```
+Da un ejemplo
 ```
 
-Link to a specific part of the page:
+### Y las pruebas de estilo de codificación ⌨️
 
-[Go To TOP](#TOP)
-   
-    Markup : [text goes here](#section_name)
-              section_title<a name="section_name"></a>    
+_Explica que verifican estas pruebas y por qué_
 
-Hotkey:
+```
+Da un ejemplo
+```
 
-<kbd>⌘F</kbd>
+## Despliegue 📦
 
-<kbd>⇧⌘F</kbd>
+_Agrega notas adicionales sobre como hacer deploy_
 
-    Markup : <kbd>⌘F</kbd>
+## Construido con 🛠️
 
-Hotkey list:
+_Menciona las herramientas que utilizaste para crear tu proyecto_
 
-| Key | Symbol |
-| --- | --- |
-| Option | ⌥ |
-| Control | ⌃ |
-| Command | ⌘ |
-| Shift | ⇧ |
-| Caps Lock | ⇪ |
-| Tab | ⇥ |
-| Esc | ⎋ |
-| Power | ⌽ |
-| Return | ↩ |
-| Delete | ⌫ |
-| Up | ↑ |
-| Down | ↓ |
-| Left | ← |
-| Right | → |
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [Maven](https://maven.apache.org/) - Manejador de dependencias
+* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
-Emoji:
+## Contribuyendo 🖇️
 
-:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
-    Markup : Code appears between colons :EMOJICODE:
+## Wiki 📖
+
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+
+## Versionado 📌
+
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+
+## Autores ✒️
+
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+
+## Expresiones de Gratitud 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Da las gracias públicamente 🤓.
+* etc.
+
+
+
+---
+⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊

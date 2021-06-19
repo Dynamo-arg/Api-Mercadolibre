@@ -1,31 +1,46 @@
-# Título del Proyecto
+# Analisis Mercado Libre
 
-_Acá va un párrafo que describa lo que es el proyecto_
-
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
+App creada para monitorear sus datos de Mercado libre, sus metricas de Ventas y sus rendimientos.
+Captura datos de competidores y los compara con los propios.
+Tambien se puede observar las palabras Claves mas buscadas, junto a los productos mas solicitados de todas las categorias.
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+- asgiref==3.3.4  
+- bootstrap4==0.1.0  
+- certifi==2021.5.30
+- cffi==1.14.5
+- chardet==4.0.0
+- cryptography==3.4.7
+- DateTime==4.3
+- Django==3.2.4
+- idna==2.10
+- json5==0.9.5
+- meli @ git+https://github.com/mercadolibre/python-sdk.git@09406bd544b974b379fea4818bd1040c7f147a40
+- melisdk==0.1.3
+- mercadolibre-python==0.2.1
+- oauthlib==3.1.1
+- pycparser==2.20
+- PyMySQL==1.0.2
+- pyOpenSSL==20.0.1
+- python-dateutil==2.8.1
+- pytz==2021.1
+- requests==2.25.1
+- requests-oauthlib==1.3.0
+- six==1.16.0
+- sqlparse==0.4.1
+- typing-extensions==3.10.0.0
+- urllib3==1.26.5
+- zope.interface==5.4.0
 
-```
-Da un ejemplo
-```
-
-### Instalación 🔧
+### Ingreso 🔧
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
 _Dí cómo será ese paso_
 
-```
-Da un ejemplo
-```
+![image](https://user-images.githubusercontent.com/72266387/122656489-7024e180-d131-11eb-8d8e-c2b09da78233.png)
 
 _Y repite_
 

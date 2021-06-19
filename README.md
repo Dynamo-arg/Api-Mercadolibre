@@ -1,4 +1,4 @@
-# Analisis Mercado Libre
+# Analisis Mercado Libre http://dynamoarg.pythonanywhere.com/
 
 App creada para monitorear sus datos de Mercado libre, sus metricas de Ventas y sus rendimientos.
 Captura datos de competidores y los compara con los propios.
@@ -34,87 +34,44 @@ Tambien se puede observar las palabras Claves mas buscadas, junto a los producto
 - urllib3==1.26.5
 - zope.interface==5.4.0
 
-### Ingreso 🔧
+### 1) Ingreso 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+Se ingresa con los datos que proporcionados por su proveedor:
 
-_Dí cómo será ese paso_
+![image](https://user-images.githubusercontent.com/72266387/122656552-f4776480-d131-11eb-9365-2a1693716bbc.png)
 
-![image](https://user-images.githubusercontent.com/72266387/122656489-7024e180-d131-11eb-8d8e-c2b09da78233.png)
 
-_Y repite_
+## 2) Pagina Inicio ⚙️
 
-```
-hasta finalizar
-```
+En la pagina de inicio podemos observar los datos actualizados de las ventas del dia del usuario principal.
+Las mismas se actualizan comunicandose con la Api de Mercado libre.
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+Se puede observar las ventas de los ultimos 7 dias, mensuales y anuales de la cuenta principal.
 
-## Ejecutando las pruebas ⚙️
+![image](https://user-images.githubusercontent.com/72266387/122656698-6c925a00-d133-11eb-923d-f6483c90030b.png)
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
 
-### Analice las pruebas end-to-end 🔩
+## 3) Pagina Competidores ⚙️
 
-_Explica que verifican estas pruebas y por qué_
+En esta pagina se ve reflejado los datos de los competidores elegidos, comparandolos con la cuenta principal.
 
-```
-Da un ejemplo
-```
+Se puede observar la facturacion, las cantidades de ventas, tanto semanales como mensueales.
 
-### Y las pruebas de estilo de codificación ⌨️
+![image](https://user-images.githubusercontent.com/72266387/122656687-4371c980-d133-11eb-9e36-6ab8f78c03af.png)
+![image](https://user-images.githubusercontent.com/72266387/122656691-4967aa80-d133-11eb-906c-10db9dcb6305.png)
+![image](https://user-images.githubusercontent.com/72266387/122656694-508eb880-d133-11eb-8352-1ddf66e91914.png)
 
-_Explica que verifican estas pruebas y por qué_
 
-```
-Da un ejemplo
-```
+## 3) Pagina Tendencias ⚙️
 
-## Despliegue 📦
+En esta pagina observamos las 10 palabras mas buscadas de las ultimas 24 horas de Mercado libre, comunicandose con la Api de ML.
 
-_Agrega notas adicionales sobre como hacer deploy_
+Se puede observar las 10 mas buscadas separadas por categoria.
 
-## Construido con 🛠️
+![image](https://user-images.githubusercontent.com/72266387/122656724-b7ac6d00-d133-11eb-8e19-640a8f3aa86f.png)
+![image](https://user-images.githubusercontent.com/72266387/122656729-c430c580-d133-11eb-9f29-ec8b84a8ffc1.png)
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
 
 
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊

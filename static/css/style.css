@@ -1,0 +1,82 @@
+:root {
+    --p1: #395F80;
+    --p2: #BFE1FF;
+    --p3: #73BEFF;
+    --p4: #4A6985;
+    --p5: #5C8FB5;
+    --fwhite: #fff;
+    --fdark: #000;
+  }
+  
+  html, body {
+    margin: 0;
+    height: 100%;
+    background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+  }
+  
+  .panels {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+  }
+  
+  .panel {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 30px;
+    transition: .2s;
+  }
+  
+  .head { top: -20%; }
+  .foot { top: 100% }
+  .head, .foot {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .body {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+    width: 100%;
+  }
+  
+  .transitioned { transition: .2s; }
+  .align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .panel:hover { width: 80%; }
+  
+  .panel:not(:hover) > .head { animation: slideDownOut .3s; }
+  .panel:hover > .head {
+    animation: slideDownIn .3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .panel:hover > .body { font-size: 80px; }
+  
+  .panel:not(:hover) > .foot { animation: slideUpOut .3s; }
+  .panel:hover > .foot {
+    animation: slideUpIn .3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .panel:nth-child(1) { background: var(--p1); color: var(--fwhite); }
+  .panel:nth-child(2) { background: var(--p2); color: var(--fdark); }
+  .panel:nth-child(3) { background: var(--p3); color: var(--fdark); }
+  .panel:nth-child(4) { background: var(--p4); color: var(--fwhite); }
+  .panel:nth-child(5) { background: var(--p5); color: var(--fdark); }
+  
+  @keyframes slideUpIn { 0% { top: 100%; } 100% { top: 70%; } }
+  @keyframes slideUpOut { 0% { top: 70%; } 100% { top: 100%; } }
+  @keyframes slideDownIn { 0% { top: -20%; } 100% { top: 0%; } }
+  @keyframes slideDownOut { 0% { top: 0%; } 100% { top: -20%; } }

@@ -1,0 +1,327 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Analisis de la Competencia</h1>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-warning text-white mb-4 align-items-center">
+                <div class="card-body">TU CUENTA: {{ user }}</div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-info text-white mb-4 align-items-center">
+                <div class="card-body">{{ a1 }}</div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4 align-items-center">
+                <div class="card-body">{{ a2 }}</div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-light text-white mb-4 align-items-center">
+                <div class="card-body">{{ a3 }}</div>
+            </div>
+        </div>
+    
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-chart-area me-1"></i>
+                    Facturacion ultimos 7 Dias
+                </div>
+                <div class="card-body"><canvas id="area1" width="100%" height="40"></canvas></div>
+            </div>
+        </div>
+        <div class="col-xl-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-chart-bar me-1"></i>
+                    Cantidad Ventas 7 Dias
+                </div>
+                <div class="card-body"><canvas id="area3" width="100%" height="40"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-chart-area me-1"></i>
+                    Mensual acumuladas : {{ mes_actual|safe }}
+                </div>
+                <div class="card-body"><canvas id="area2" width="100%" height="40"></canvas></div>
+            </div>
+        </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="{% static 'startboot\js\datatables-simple-demo.js' %}"></script>
+    <script>
+        // Set new default font family and font color to mimic Bootstrap's default styling
+        Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+        Chart.defaults.global.defaultFontColor = '#292b2c';
+
+        // Area Chart Example
+        var ctx = document.getElementById("area1");
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+                
+                data: {
+                    labels: {{ dias_semanas |safe }},
+                    datasets: [
+                        {
+                        label: '{{ user }}',
+                        data: {{ principal }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#ffc107'
+                        },
+                        {
+                        label: '{{ a1 }}',
+                        data: {{ user1_semana }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#0dcaf0'
+                        },
+                        {
+                        label: '{{ a2 }}',
+                        data: {{ user2_semana }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#0d6efd'
+                        },
+                        {
+                        label: '{{ a3 }}',
+                        data: {{ user3_semana }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#1100f8'
+                        },
+                        
+                        
+
+
+                    ]
+                },
+                options: {
+
+
+                    scales: {
+                        xAxes: [{
+                            time: {
+                                unit: 'date'
+                            },
+                            gridLines: {
+                                display: false
+                            },
+                            ticks: {
+                                maxTicksLimit: 7
+                            }
+                        }],
+                            yAxes: [{
+                                ticks: {
+                                    min: 0,
+                                    maxTicksLimit: 15
+                                },
+                                gridLines: {
+                                    color: "rgba(0, 0, 0, .125)",
+                                }
+                            }],
+                        },
+                    legend: {
+                        display: true
+                    }
+                }
+                });
+
+
+   
+   
+
+    </script>
+
+        <script>
+        // Set new default font family and font color to mimic Bootstrap's default styling
+        Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+        Chart.defaults.global.defaultFontColor = '#292b2c';
+
+        // Area Chart Example
+        var ctx = document.getElementById("area3");
+        var myLineChart = new Chart(ctx, {
+            type: 'bar',
+                
+                data: {
+                    labels: {{ dias_semanas |safe }},
+                    datasets: [
+                        {
+                        label: '{{ user }}',
+                        backgroundColor: '#ffc107',
+                        data: {{ principal_ventas }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#ffc107'
+                        },
+                        {
+                        label: '{{ a1 }}',
+                        backgroundColor: '#0dcaf0',
+                        data: {{ user1_ventas }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#0dcaf0'
+                        },
+                        {
+                        label: '{{ a2 }}',
+                        backgroundColor: '#0d6efd',
+                        data: {{ user2_ventas }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#0d6efd'
+                        },
+                        {
+                        label: '{{ a3 }}',
+                        backgroundColor: '#1100f8',
+                        data: {{ user3_ventas }},
+                        showLine: true,
+                        fill: false,
+                        borderColor: '#1100f8'
+                        },
+                        
+                        
+
+
+                    ]
+                },
+                options: {
+
+
+                    scales: {
+                        xAxes: [{
+                            time: {
+                                unit: 'date'
+                            },
+                            gridLines: {
+                                display: false
+                            },
+                            ticks: {
+                                maxTicksLimit: 7
+                            }
+                        }],
+                            yAxes: [{
+                                ticks: {
+                                    min: 0,
+                                    maxTicksLimit: 15
+                                },
+                                gridLines: {
+                                    color: "rgba(0, 0, 0, .125)",
+                                }
+                            }],
+                        },
+                    legend: {
+                        display: true
+                    }
+                }
+                });
+
+
+   
+   
+
+    </script>
+
+<script>
+    // Set new default font family and font color to mimic Bootstrap's default styling
+    Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+    Chart.defaults.global.defaultFontColor = '#292b2c';
+
+    // Area Chart Example
+    var ctx = document.getElementById("area2");
+    var myLineChart = new Chart(ctx, {
+        type: 'bar',
+            
+            data: {
+                labels: ["Junio"],
+                datasets: [
+                    {
+                    label: '{{ user }}',
+                    backgroundColor: '#ffc107',
+                    data: {{ user_01 }},
+                    showLine: true,
+                    fill: false,
+                    borderColor: '#ffc107'
+                    },
+                    {
+                    label: '{{ a1 }}',
+                    backgroundColor: '#0dcaf0',
+                    data: {{ a1_total }},
+                    showLine: true,
+                    fill: false,
+                    borderColor: '#0dcaf0'
+                    },
+                    {
+                    label: '{{ a2 }}',
+                    backgroundColor: '#0d6efd',
+                    data: {{ a2_total }},
+                    showLine: true,
+                    fill: false,
+                    borderColor: '#0d6efd'
+                    },
+                    {
+                    label: '{{ a3 }}',
+                    backgroundColor: '#1100f8',
+                    data: {{ a3_total }},
+                    showLine: true,
+                    fill: false,
+                    borderColor: '#1100f8'
+                    },
+                    
+                    
+
+
+                ]
+            },
+            options: {
+
+
+                scales: {
+                    xAxes: [{
+                        time: {
+                            unit: 'date'
+                        },
+                        gridLines: {
+                            display: false
+                        },
+                        ticks: {
+                            maxTicksLimit: 7
+                        }
+                    }],
+                        yAxes: [{
+                            ticks: {
+                                min: 0,
+                                maxTicksLimit: 15
+                            },
+                            gridLines: {
+                                color: "rgba(0, 0, 0, .125)",
+                            }
+                        }],
+                    },
+                legend: {
+                    display: true
+                }
+            }
+            });
+
+
+
+</script>
+
+
+    {% endblock %}

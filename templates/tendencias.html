@@ -1,0 +1,1238 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4 alert-light">Tendencias Mercado Libre 10 Palabras Mas buscadas</h1>
+
+
+        <div class="card bg-warning1 text-gray-900 align-items-center">
+            <div class="card-body"><center><b> {{ key.1 }} </b> <br>{{ link.1 }}   </div>
+        </div>
+
+        <div class="card bg-warning2 text-gray-900  align-items-center">
+            <div class="card-body"><center><b>{{ key.2 }} </b><br> {{ link.2 }}</div>
+        </div>
+
+        <div class="card bg-warning3 text-gray-900  align-items-center">
+            <div class="card-body"><center><b>{{ key.3 }} </b><br> {{ link.3 }}</div>
+        </div>
+
+        <div class="card bg-warning1 text-gray-900 align-items-center">
+            <div class="card-body"><center><b>{{ key.4 }} </b><br> {{ link.4 }}</div>
+        </div>
+
+        <div class="card bg-warning2 text-gray-900  align-items-center">
+            <div class="card-body"><center><b> {{ key.5 }}</b> <br> {{ link.5 }}</div>
+        </div>
+
+        <div class="card bg-warning3 text-gray-900  align-items-center">
+            <div class="card-body"><center><b>{{ key.6 }} </b><br> {{ link.6 }}</div>
+        </div>
+
+
+        <div class="card bg-warning1 text-gray-900  align-items-center">
+            <div class="card-body"><center><b>{{ key.7 }} </b><br> {{ link.7 }}</div>
+        </div>
+
+        <div class="card bg-warning2 text-gray-900 align-items-center">
+            <div class="card-body"><center><b>{{ key.8}} </b><br> {{ link.8 }}</div>
+        </div>
+
+        <div class="card bg-warning3 text-gray-900  align-items-center">
+            <div class="card-body"><center><b>{{ key.9 }} </b> <br>{{ link.9 }}</div>
+        </div>
+
+        <div class="card bg-warning1 text-gray-900  align-items-center">
+            <div class="card-body"><center><b>{{ key.10 }} </b><br> {{ link.10 }}</div>
+        </div>
+</div>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4 bg-warning5">Por categorias Palabras mas buscadas</h1>
+
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.0 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.0 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.1}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.2 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.3 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.4}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.5 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.6 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.7}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.8 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.9}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <h4 class="mt-4 alert-light ">{{ categoria.1 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.10 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.11}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.12 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.13 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.14}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.15 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.16 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.17}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.18 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.19}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.2 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.20 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.21}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.22 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.23 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.24}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.25 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.26 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.27}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.28 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.29}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.3 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.30 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.31}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.32 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.33 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.34}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.35 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.36 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.37}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.38 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.39}} </div>
+
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.4 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.40 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.41}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.42 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.43 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.44}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.45 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.46 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.47}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.48 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.49}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <h4 class="mt-4 alert-light ">{{ categoria.5 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.50 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.51}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.52 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.53 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.54}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.55 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.56 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.57}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.58 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.59}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.6 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.60 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.61}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.62 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.63 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.64}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.65 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.66 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.67}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.68 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.69}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+                <h4 class="mt-4 alert-light ">{{ categoria.7 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.70 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.71}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.72 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.73 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.74}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.75 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.76 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.77}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.78 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.79}} </div>
+
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.8 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.80 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.81}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.82 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.83 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.84}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.85 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.86 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.87}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.88 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.89}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <h4 class="mt-4 alert-light ">{{ categoria.9 }} </h4>
+                     <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.90 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.91}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.92 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.93 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.94}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.95 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.96 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.97}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.98 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.99}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.10 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.100 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.101}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.102 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.103 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.104}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.105 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.106 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.107}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.108 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.109}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+                <h4 class="mt-4 alert-light ">{{ categoria.11 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.110 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.111}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.112 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.113 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.114}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.115 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.116 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.117}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.118 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.119}} </div>
+
+        </div>
+        </div>
+
+  <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.12 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.120 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.121}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.122 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.123 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.124}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.125 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.126 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.127}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.128 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.129}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <h4 class="mt-4 alert-light ">{{ categoria.13 }} </h4>
+                     <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.130 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.131}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.132 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.133 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.134}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.135 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.136 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.137}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.138 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.139}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.14 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.140 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.141}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.142 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.143 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.144}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.145 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.146 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.147}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.148 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.149}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+                <h4 class="mt-4 alert-light ">{{ categoria.15 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.150 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.151}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.152 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.153 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.154}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.155 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.156 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.157}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.158 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.159}} </div>
+
+        </div>
+        </div>
+
+         <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.16 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.160 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.161}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.162 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.163 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.164}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.165 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.166 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.167}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.168 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.169}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <h4 class="mt-4 alert-light ">{{ categoria.17 }} </h4>
+            <div><br> </div>
+
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.170 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.171}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.172 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.173 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.174}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.175 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.176 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.177}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.178 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.179}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.18 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.180 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.181}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.182 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.183 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.184}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.185 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.186 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.187}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.188 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.189}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+                <h4 class="mt-4 alert-light ">{{ categoria.19 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.190 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.191}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.192 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.193 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.194}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.195 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.196 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.197}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.198 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.199}} </div>
+
+        </div>
+        </div>
+
+  <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.20 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.200 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.201}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.202 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.203 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.204}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.205 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.206 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.207}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.208 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.209}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+                <h4 class="mt-4 alert-light ">{{ categoria.21 }} </h4>
+                <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.210 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.211}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.212 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.213 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.214}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.215 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.216 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.217}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.218 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.219}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.22 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.220 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.221}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.222 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.223 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.224}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.225 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.226 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.227}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.228 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.229}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+                <h4 class="mt-4 alert-light ">{{ categoria.23 }} </h4>
+                <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.230 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.231}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.232 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.233 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.234}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.235 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.236 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.237}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.238 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.239}} </div>
+
+        </div>
+        </div>
+
+
+  <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.24 }} </h4>
+            <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.240 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.241}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.242 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.243 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.244}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.245 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.246 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.247}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.248 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.249}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+                <h4 class="mt-4 alert-light ">{{ categoria.25 }} </h4>
+
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.250 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.251}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.252 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.253 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.254}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.255 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.256 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.257}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.258 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.259}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.26 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.260 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.261}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.262 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.263 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.264}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.265 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.266 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.267}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.268 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.269}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+                <h4 class="mt-4 alert-light ">{{ categoria.27 }} </h4>
+                <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.270 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.271}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.272 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.273 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.274}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.275 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.276 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.277}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.278 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.279}} </div>
+
+        </div>
+        </div>
+
+         <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4 class="mt-4 alert-light ">{{ categoria.28 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.280 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.281}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.282 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.283 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.284}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.285 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.286 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.287}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.288 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.289}} </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+                <h4 class="mt-4 alert-light ">{{ categoria.29 }} </h4>
+                <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.290 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.291}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.292 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.293 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.294}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.295 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.296 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.297}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.298 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.299}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+             <h4 class="mt-4 alert-light ">{{ categoria.30 }} </h4>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.300 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.301}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.302 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.303 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.304}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.305 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.306 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.307}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.308 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.309}} </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+                <h4 class="mt-4 alert-light ">{{ categoria.31 }} </h4>
+                <div><br> </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.310 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.311}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.312 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.313 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.314}} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.315 }} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.316 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.317}} </div>
+
+            <div class="card bg-warning1 text-gray-900 align-items-center">
+                {{ links.318 }} </div>
+
+            <div class="card bg-warning2 text-gray-900 align-items-center">
+                {{ links.319}} </div>
+
+        </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+{% endblock %}
